@@ -16,8 +16,7 @@ body {
     width: 70%;
     margin: 0 auto;
     background-color: #ffffff;
-    padding: 20px 60px;
-    
+    padding: 20px 60px; 
 }
 
 
@@ -74,7 +73,7 @@ body {
 
 ul {
     list-style: none;
-    color: #36343a;
+    color: #3a3652;
     line-height: 2.5em;
 }
 
@@ -145,6 +144,24 @@ li.mobile::after {
     content: "Mobile";
     color: #ffffff;
     background-color: #ffaf37;
+    border-radius: 15px;
+    font-size: .7em;
+    padding: .6em 1em;
+}
+
+li.website::after {
+    content: "Website";
+    color: #ffffff;
+    background-color: #e05bbf;
+    border-radius: 15px;
+    font-size: .7em;
+    padding: .6em 1em;
+}
+
+li.sales::after {
+    content: "Sales";
+    color: #ffffff;
+    background-color: #a4be30;
     border-radius: 15px;
     font-size: .7em;
     padding: .6em 1em;

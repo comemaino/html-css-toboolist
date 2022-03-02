@@ -1,7 +1,12 @@
+/* RESET */
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -13,9 +18,9 @@ body {
 /* COMMON */
 
 .container {
+    background-color: #ffffff;
     width: 70%;
     margin: 0 auto;
-    background-color: #ffffff;
     padding: 20px 60px; 
 }
 
@@ -93,77 +98,61 @@ ul.secondary {
     margin-bottom: 15px;
 }
 
+ul.secondary li::before {
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-right: 3px;
+    border-radius: 50%;
+}
+
 li.done::before {
     content: "\2713";
     color: #099b09;
-    padding-left: 3px;
-    padding-right: 3px;
     border: 1px solid #099b09;
-    border-radius: 50%;
 }
 
 li.todo::before {
     content: "\2717";
     color: #cc2525;
-    padding-left: 3px;
-    padding-right: 3px;
     border: 1px solid #cc2525;
-    border-radius: 50%;
 }
 
 
 /* ETICHETTE */
 
+ul.secondary li::after {
+    color: #ffffff;
+    border-radius: 1.2em;
+    font-size: .7em;
+    padding: .6em 1em;    
+}
+
 li.editorial::after {
     content: "Editorial";
-    color: #ffffff;
     background-color: #52baff;
-    border-radius: 15px;
-    font-size: .7em;
-    padding: .6em 1em;
 }
 
 li.q1goals::after {
     content: "Q1 Goals";
-    color: #ffffff;
     background-color: #ab52ff;
-    border-radius: 15px;
-    font-size: .7em;
-    padding: .6em 1em;
 }
 
 li.recruiting::after {
     content: "Recruiting";
-    color: #ffffff;
     background-color: #2bbd85;
-    border-radius: 15px;
-    font-size: .7em;
-    padding: .6em 1em;
 }
 
 li.mobile::after {
     content: "Mobile";
-    color: #ffffff;
     background-color: #ffaf37;
-    border-radius: 15px;
-    font-size: .7em;
-    padding: .6em 1em;
 }
 
 li.website::after {
     content: "Website";
-    color: #ffffff;
     background-color: #e05bbf;
-    border-radius: 15px;
-    font-size: .7em;
-    padding: .6em 1em;
 }
 
 li.sales::after {
     content: "Sales";
-    color: #ffffff;
     background-color: #a4be30;
-    border-radius: 15px;
-    font-size: .7em;
-    padding: .6em 1em;
 }
